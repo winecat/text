@@ -1,13 +1,11 @@
 {{!-- This is the post loop - each post will be output using this markup --}}
 {{#foreach posts}}
 <div class="post-title">
-  <h4><li><a href="{{url}}"><h4>{{title}}</a></li></h4>
-  <h5>
-    <span class="small">{{author}} at</span>
+  <a href="{{url}}"><font color=#0099ff size=3 face="Courier New">{{title}}</font></a></br>
+    <font color=#0099ff size=3 face="Courier New"><span class="small">{{author}} at</span>
     <time class="small" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY MMM DD"}}</time>
     <span class="small">{{tags prefix=" | "}}</span>
-    <span class="small"> | </span>
-  </h5>
+    <span class="small"> | </span></font></br></br>
 </div>
 {{/foreach}}
 
