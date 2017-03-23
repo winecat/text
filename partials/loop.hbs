@@ -1,15 +1,15 @@
 {{!-- This is the post loop - each post will be output using this markup --}}
 {{#foreach posts}}
 <div class="post-title">
-  <h3><a href="{{url}}">{{title}}</a></h3>
+  <h4><a href="{{url}}">{{title}}</h4>
+  <h5>
+    <span class="small">{{author}} at</span>
+    <time class="small" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY MMM DD"}}</time>
+    <span class="small">{{tags prefix=" | "}}</span>
+    <span class="small"> | </span>
+    <span class="small"><a href="{{url}}#disqus_thread" data-disqus-identifier="{{id}}"></a></span>
+  </h5>
 </div>
-<h5>
-  <span class="small">{{author}} at</span>
-  <time class="small" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY MMM DD"}}</time>
-  <span class="small">{{tags prefix=" | "}}</span>
-  <span class="small"> | </span>
-  <span class="small"><a href="{{url}}#disqus_thread" data-disqus-identifier="{{id}}"></a></span>
-</h5>
 {{/foreach}}
 
 {{!-- Previous/next page links - displayed on every page --}}
