@@ -1,12 +1,7 @@
 {{!-- This is the post loop - each post will be output using this markup --}}
 {{#foreach posts}}
 <div class="post-title">
-  <h1><a href="{{url}}">{{title}}</a></h1>
-</div>
-<div class="post-content">
-  <p>
-    <a class="post-excerpt" href="{{url}}">{{excerpt characters="140"}} ... &raquo;</a>
-  </p>
+  <h3><a href="{{url}}">{{title}}</a></h3>
 </div>
 <h5>
   <span class="small">{{author}} at</span>
