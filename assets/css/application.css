@@ -151,16 +151,39 @@ dfn {
 * Correct the font size and margin on `h1` elements within `section` and
 * `article` contexts in Chrome, Firefox, and Safari.
 */
-
+/*
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
+*/
 /**
 * Correct the line-height for all headings in Chrome mobile, Firefox,
 * iOS Safari, Microsoft Edge and IE.
 */
+h1 {
+  font-size: 1.38em
+}
+
+h2 {
+  font-size: 1.3em
+}
+
+h3 {
+  font-size: 1.2em
+}
+
+h4 {
+  font-size: 1.1em
+}
+
+h5 {
+  font-size: .83em
+}
+
+h6 {
+  font-size: .67em
+}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
