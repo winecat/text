@@ -151,44 +151,51 @@ dfn {
 * Correct the font size and margin on `h1` elements within `section` and
 * `article` contexts in Chrome, Firefox, and Safari.
 */
-/*
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-*/
+/**
+*h1 {
+*  font-size: 2em;
+*  margin: 0.67em 0;
+*}
+**/
 /**
 * Correct the line-height for all headings in Chrome mobile, Firefox,
 * iOS Safari, Microsoft Edge and IE.
 */
 h1 {
-  font-size: 1.38em
+  font-size: 1.35em;
+  line-height: 1.0;
+  margin: 0.67em 0;
 }
 
 h2 {
-  font-size: 1.3em
+  font-size: 1.2em;
+  line-height: 0.8;
 }
 
 h3 {
-  font-size: 1.2em
+  font-size: 1.1em;
+  line-height: 0.7;
 }
 
 h4 {
-  font-size: 1.1em
+  font-size: 1.0em;
+  line-height: 0.6;
 }
 
 h5 {
-  font-size: .83em
+  font-size: .83em;
+  line-height: 0.5;
 }
 
 h6 {
-  font-size: .67em
+  font-size: .67em;
+  line-height: 0.4;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.5;
-}
-
+/**
+*h1, h2, h3, h4, h5, h6 {
+*  line-height: 1.5;
+*}
+**/
 /**
 * Add the correct background and color in IE 9-.
 */
