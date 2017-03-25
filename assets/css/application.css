@@ -151,51 +151,20 @@ dfn {
 * Correct the font size and margin on `h1` elements within `section` and
 * `article` contexts in Chrome, Firefox, and Safari.
 */
-/**
-*h1 {
+h1 {
 *  font-size: 2em;
 *  margin: 0.67em 0;
 *}
-**/
+
 /**
 * Correct the line-height for all headings in Chrome mobile, Firefox,
 * iOS Safari, Microsoft Edge and IE.
 */
-h1 {
-  font-size: 1.35em;
-  line-height: 1.1;
-  margin: 0.67em 0;
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
 }
 
-h2 {
-  font-size: 1.2em;
-  line-height: 0.8;
-}
-
-h3 {
-  font-size: .8em;
-  line-height: 0.7;
-}
-
-h4 {
-  font-size: .7em;
-  line-height: 0.6;
-}
-
-h5 {
-  font-size: .67em;
-  line-height: 0.5;
-}
-
-h6 {
-  font-size: .60em;
-  line-height: 0.4;
-}
-/**
-*h1, h2, h3, h4, h5, h6 {
-*  line-height: 1.5;
-*}
-**/
 /**
 * Add the correct background and color in IE 9-.
 */
@@ -491,31 +460,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.0rem;
   text-indent: -3px;
   letter-spacing: -2px;
 }
 
 h2 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   letter-spacing: -1px;
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   letter-spacing: -0.6px;
 }
 
 h4 {
-  font-size: 2rem;
-}
-
-h5 {
   font-size: 1.8rem;
 }
 
+h5 {
+  font-size: 1.6rem;
+}
+
 h6 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 p {
