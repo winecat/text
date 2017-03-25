@@ -163,7 +163,7 @@ dfn {
 */
 h1 {
   font-size: 1.35em;
-  line-height: 1.0;
+  line-height: 1.1;
   margin: 0.67em 0;
 }
 
@@ -173,22 +173,22 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: .8em;
   line-height: 0.7;
 }
 
 h4 {
-  font-size: 1.0em;
+  font-size: .7em;
   line-height: 0.6;
 }
 
 h5 {
-  font-size: .83em;
+  font-size: .67em;
   line-height: 0.5;
 }
 
 h6 {
-  font-size: .67em;
+  font-size: .60em;
   line-height: 0.4;
 }
 /**
