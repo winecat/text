@@ -4,15 +4,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="{{asset "images/favicon.ico"}}" type="image/x-icon" />
-    <!-- <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" /> -->
-
+    <link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset "css/application.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "font-awesome-4.7.0/css/font-awesome.min.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/font/han.woff' rel='stylesheet' type='text/css'>
+    <link href='//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/font/han.otf' rel='stylesheet' type='text/css'>
     {{ghost_head}}
   </head>
   <body>
@@ -32,11 +33,21 @@
       </header>
       {{{body}}}
       <footer class="center">
+        {{#if @labs.subscribers}}
+          <div class="subscribe-form">
+             {{subscribe_form placeholder="youremail@example.com"}}
+          </div>
+        {{/if}}
         <p class="small"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</p>
         <p class="small">Powered by <a href="https://ghost.org" target="_blank">Ghost</a> | Theme - <a href="https://github.com/imgarylai/text" target="_blank">text</a></p>
       </footer>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript" src="{{asset "js/highlightjs-line-numbers.min.js"}}" ></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/github.min.css">
     <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
     <script>
       hljs.initHighlightingOnLoad();
@@ -63,6 +74,16 @@
     <script>
       $('a').fluidbox({
       });
+    </script>
+    <script>
+      var images = document.querySelectorAll('.kg-gallery-image img');
+      images.forEach(function (image) {
+        var container = image.closest('.kg-gallery-image');
+        var width = image.attributes.width.value;
+        var height = image.attributes.height.value;
+        var ratio = width / height;
+        container.style.flex = ratio + ' 1 0%';
+      })
     </script>
   </body>
 </html>
