@@ -4,18 +4,10 @@
   <h1><a href="{{url}}"><font size=5><i>{{title}}</i></font></a></h1>
 </div>
 <div class="post-content">
-  <p>
-    <a class="post-excerpt" href="{{url}}">{{excerpt characters="140"}} <font size=2><i>...read more</i></font></a>
-  </p>
-</div>
-<h5>
-  <time class="small" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY MMM DD"}}</time>
-  <span class="small">{{tags prefix=" | "}}</span>
-  <span class="small"> | </span>
-  <span class="small">
-    <a href="{{url}}#disqus_thread" data-disqus-identifier="{{comment_id}}"></a>
-  </span>
-</h5>
+<h4>
+  <time datetime="{{date format=" YYYY-MM-DD "}}">{{date format=" YYYY MMM DD"}}</time> -
+  <a href="{{url}}"><font size=5><i>{{title}}</i></font></a>
+</h4>
 {{/foreach}}
 
 {{!-- Previous/next page links - displayed on every page --}}
