@@ -1,12 +1,8 @@
 {{!-- This is the post loop - each post will be output using this markup --}}
 {{#foreach posts}}
-<div class="post-title">
-  <h1><a href="{{url}}"><font size=5><i>{{title}}</i></font></a></h1>
-</div>
-<div class="post-content">
 <h4>
   <time datetime="{{date format=" YYYY-MM-DD "}}">{{date format=" YYYY MMM DD"}}</time> -
-  <a href="{{url}}"><font size=5><i>{{title}}</i></font></a>
+  <a href="{{url}}"><font size=4><i>{{title}}</i></font></a>
 </h4>
 {{/foreach}}
 
